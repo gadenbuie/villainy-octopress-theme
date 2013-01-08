@@ -1,3 +1,8 @@
+//other colors:
+$orange:#eb4316;
+$dark-orange: #972a0c;
+$light-orange: #f5a18b;
+
 $body-bg: white;
 $noise-bg: image-url('noise.png') top left !default;
 
@@ -54,13 +59,20 @@ aside#logo div a {
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  background: red url(/images/star_large.png) center center no-repeat;
   background-size: 100% 100%;
 }
 
 /* Menu */
 ul#menu a {
-  color: #999;
+  color: $dark-orange;
+  text-shadow: 0px 1px 0px $light-orange;
+  font-family: $heading-font-family;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #fff;
+    text-shadow: 0px 1px 0px $dark-orange;
+  }
 }
 
 #octopress_linkback {
