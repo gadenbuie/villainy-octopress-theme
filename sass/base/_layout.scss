@@ -121,9 +121,13 @@ header#sidebar h1#title {
   // border-left: 1px solid #e3e3e3;
   margin-left: 27%;
   min-height: 900px;
-  min-width: 658px;
+  width: 45%;
   position: relative;
   z-index: 9999;
+
+  h2, p, iframe, div, img, ul, figure {
+    max-width: 100%;
+  }
 }
 
 header#sidebar h1#title a {
@@ -271,22 +275,15 @@ header#sidebar {
     border: none;
     width: 100%;
     min-width: 0;
-    margin-top: 15px;
     overflow: hidden;
   }
 
   section#main article {
     width: auto;
-    padding-left: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 20px;
     overflow: hidden;
   }
 
-  article p, article h2, article h1, article h3, article h4, article h5, article h6 {
-    padding-right: 10px;
-    padding-left: 15px;
-  }
 
   section#main article h2 {
     margin-top: 0;
@@ -298,12 +295,7 @@ header#sidebar {
     padding-top: 30px;
     padding-bottom: 15px;
     overflow: hidden;
-  }
-
-  article.post figure {
-    padding-right: 10px;
-    padding-left: 15px;
-    width: 90%;
+    max-width: 100%;
   }
 
   aside#octopress_linkback {
@@ -329,13 +321,6 @@ section.comments {
   overflow-x: hidden;
 }
 
-article.post h2, article.post p {
-  max-width: 500px;
-}
-
-article.post figure {
-  max-width: 500px;
-}
 
 // Anchor
 h2.entry-title a.anchor {
