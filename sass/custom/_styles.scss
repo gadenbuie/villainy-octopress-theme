@@ -1,0 +1,45 @@
+// Tomorrow Night Eighties
+@import 'custom/_tomorrow/tomorrow-night-eighties';
+
+// Footnote Reference Links
+sup a.footnoteRef {
+  border-bottom: none;
+  color: $accent-strong-color;
+  font-weight: bold;
+}
+
+
+// Table CSS stylings
+
+* + table {
+	margin-top: 2.5%;
+	margin-bottom: 5%;
+	max-width: 100%;
+	border-collapse: collapse;
+}
+
+* + table th {
+	font-weight: bold;
+	padding: 10px 8px;
+	border-bottom: 2px solid $sidebar-bg-color;
+}
+
+* + table td {
+	padding: 4px 8px 4px 8px;
+}
+
+* + table th[align="left"], * + table td[align="left"] {
+  text-align:left;
+}
+ 
+* + table th[align="right"], * + table td[align="right"] {
+  text-align:right;
+}
+ 
+* + table th[align="center"], * + table td[align="center"] {
+  text-align:center;
+}
+
+* + table .odd {
+  background-color: gainsboro;
+}

@@ -1,19 +1,3 @@
-//other colors:
-$orange:#eb4316;
-$dark-orange: #972a0c;
-$light-orange: #f5a18b;
-
-$body-bg: white;
-$noise-bg: image-url('noise.png') top left !default;
-
-// Main Link Colors
-$link-color: lighten(black, 3) !default;
-
-// Main Section Colors
-$text-color: #222 !default;
-$text-color-light: #aaa !default;
-$type-border: #ddd !default;
-
 /* General rules */
 body {
   background-color: $body-bg;
@@ -36,13 +20,14 @@ ul {
 }
 
 // Logo
-aside#logo {
+/* aside#logo {
   background-color: red;
 }
 
 aside#logo div {
   background-color: white;
 }
+*/
 
 aside#logo div a {
   border-radius: 50%;
@@ -53,30 +38,33 @@ aside#logo div a {
 
 /* Menu */
 ul#menu a {
-  color: $dark-orange;
-  text-shadow: 0px 1px 0px $light-orange;
+  color: $accent-light-color;
+  /* text-shadow: 0px 1px 0px $light-orange; */
   font-family: $heading-font-family;
   text-transform: uppercase;
 
   &:hover {
     color: #fff;
-    text-shadow: 0px 1px 0px $dark-orange;
+    text-shadow: 0px 1px 0px $accent-light-color;
   }
 }
 
 #octopress_linkback {
+  color: #fff;
   background-color: rgba(255, 255, 255, 0.7);
 }
 /* Article rules */
-article a:link, article a:visited, article a:hover, article a:active {
+article a:link, article a:visited, article a:active {
   text-decoration: none;
+  /* border-bottom: 1px solid #CCC; */
+  color: $link-color;
+}
+article a:hover {
   border-bottom: 1px solid #CCC;
-  border-bottom: 1px solid #CCC;
-  color: #002e03;
 }
 
 h2.entry-title {
-  color: $orange;
+  color: $accent-color;
   font-family: $heading-font-family;
   text-transform: uppercase;
   font-size: 1.9em;
@@ -84,7 +72,7 @@ h2.entry-title {
 
 
   a:link, a:hover, a:visited, a:active {
-    color: $orange;
-    border-bottom: 1px solid $orange;
+    color: $accent-color;
+    border-bottom: 1px solid $accent-color;
   }
 }

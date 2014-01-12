@@ -1,0 +1,12 @@
+#blog-archives h1 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 1.5em;
+  font-family: $heading-font-family;
+}
+
+#blog-archives article {
+  border-bottom: 1px solid $sidebar-bg-color;
+  margin-bottom: 10px;
+  padding-bottom: 13px;
+}

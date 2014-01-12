@@ -1,0 +1,23 @@
+// Theme colors:
+$sidebar-bg-color: #4A4D55;
+$accent-color: #EA5359;
+$accent-light-color: #9ec4d7;
+$accent-strong-color: #16A79D;
+
+//other colors:
+$orange:#eb4316;
+$dark-orange: #972a0c;
+$light-orange: #f5a18b;
+
+
+$body-bg: white;
+$noise-bg: image-url('noise.png') top left !default;
+
+// Main Link Colors
+// $link-color: lighten(black, 3) !default;
+$link-color: $accent-color !default;
+
+// Main Section Colors
+$text-color: #222 !default;
+$text-color-light: #aaa !default;
+$type-border: #ddd !default;

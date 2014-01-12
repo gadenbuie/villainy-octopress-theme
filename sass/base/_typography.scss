@@ -10,7 +10,7 @@ $blockquote: $type-border !default;
 
 body > header h1 {
   font-size: 2.2em;
-  @extend .heading;
+  @extend .heading !optional;
   font-family: $header-title-font-family;
   font-weight: normal;
   line-height: 1.2em;
@@ -32,7 +32,7 @@ body {
 }
 
 #{headings()}{
-  @extend .heading;
+  @extend .heading !optional;
   text-rendering: optimizelegibility;
   margin-bottom: 1em;
   font-weight: bold;
