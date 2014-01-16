@@ -77,8 +77,14 @@ h5 {
   text-transform: uppercase;
 }
 h6 {
-  font-size: .9em;
-  color: $orange;
+  float: right;
+  max-width: 40%;
+  font-size: 1.5em;
+  font-family: $heading-font-family;
+  margin-left: 15px;
+  color: $accent-strong-color;
+  text-align: center;
+  font-weight: bold;
 }
 p, blockquote, ul, ol { margin-bottom: 1.5em; }
 
